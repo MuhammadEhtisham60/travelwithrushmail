@@ -35,41 +35,41 @@ export default function Footer() {
   return (
     <footer className="bg-[#072a44] text-slate-300 border-t border-sky-950">
       {/* Main Footer Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12">
           {/* Column 1: Brand & Socials (4 cols) */}
-          <div className="lg:col-span-4 space-y-4">
-            <Link href="#hero" className="inline-block">
+          <div className="sm:col-span-2 lg:col-span-4 space-y-4">
+            <Link href="#hero" className="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg">
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                Travel with <span className="text-[#38bdf8]">Rushmail </span>
+                Travel with <span className="text-[#38bdf8]">Rushmile</span>
               </span>
             </Link>
-            <p className="text-sm text-sky-100/70 leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-sky-100/70 leading-relaxed max-w-sm">
               Premium curated tours and private expeditions through Northern
               Pakistan. Experience Khunjerab Pass, Baosar Top, Skardu, and Hunza
               Valley with comfort and trusted local hospitality.
             </p>
 
-            {/* Social Icons */}
+            {/* Social Icons with 44px touch targets */}
             <div className="flex items-center gap-3 pt-2">
               <a
                 href="#"
-                aria-label="Follow Rushmail  on Facebook"
-                className="w-10 h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
+                aria-label="Follow Rushmile on Facebook"
+                className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
               >
                 <FacebookIcon className="w-4 h-4" />
               </a>
               <a
                 href="#"
-                aria-label="Follow Rushmail  on Instagram"
-                className="w-10 h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
+                aria-label="Follow Rushmile on Instagram"
+                className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
               <a
                 href="#"
-                aria-label="Watch Rushmail  on YouTube"
-                className="w-10 h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
+                aria-label="Watch Rushmile on YouTube"
+                className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
               >
                 <YouTubeIcon className="w-4 h-4" />
               </a>
@@ -77,8 +77,8 @@ export default function Footer() {
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Message Rushmail  on WhatsApp"
-                className="w-10 h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
+                aria-label="Message Rushmile on WhatsApp"
+                className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-sky-400/30 text-white flex items-center justify-center hover:bg-[#38bdf8] hover:border-[#38bdf8] hover:text-[#072a44] transition-all duration-300"
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
@@ -86,15 +86,15 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Explore (2 cols) */}
-          <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-sky-400">
+          <div className="lg:col-span-2 space-y-3 sm:space-y-4">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-400">
               Explore
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link
                   href="#destinations"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Destinations
                 </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#tours"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Tours & Packages
                 </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#gallery"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Photo Gallery
                 </Link>
@@ -118,7 +118,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#experiences"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Experiences
                 </Link>
@@ -127,15 +127,15 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Company (3 cols) */}
-          <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-sky-400">
+          <div className="lg:col-span-3 space-y-3 sm:space-y-4">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-400">
               Company
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link
                   href="#about"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   About Us
                 </Link>
@@ -143,7 +143,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#contact"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Contact & Bookings
                 </Link>
@@ -151,7 +151,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Terms & Conditions
                 </a>
@@ -159,7 +159,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-sky-300 transition-colors"
+                  className="hover:text-sky-300 transition-colors py-1 inline-block"
                 >
                   Privacy Policy
                 </a>
@@ -168,14 +168,14 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Contact (3 cols) */}
-          <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-sky-400">
+          <div className="sm:col-span-2 lg:col-span-3 space-y-3 sm:space-y-4">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-400">
               Direct Contact
             </h4>
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 text-xs sm:text-sm">
               <a
                 href={`tel:${COMPANY_INFO.phonePrimaryRaw}`}
-                className="flex items-center gap-3 text-sky-100 hover:text-white transition-colors"
+                className="flex items-center gap-3 text-sky-100 hover:text-white transition-colors py-1"
               >
                 <Phone className="w-4 h-4 text-sky-400 shrink-0" />
                 <span className="font-semibold">{COMPANY_INFO.phonePrimary}</span>
@@ -183,13 +183,13 @@ export default function Footer() {
 
               <a
                 href={`tel:${COMPANY_INFO.phoneSecondaryRaw}`}
-                className="flex items-center gap-3 text-sky-100 hover:text-white transition-colors"
+                className="flex items-center gap-3 text-sky-100 hover:text-white transition-colors py-1"
               >
                 <Phone className="w-4 h-4 text-sky-400 shrink-0" />
                 <span className="font-semibold">{COMPANY_INFO.phoneSecondary}</span>
               </a>
 
-              <div className="flex items-center gap-3 text-sky-200/70 pt-1">
+              <div className="flex items-center gap-3 text-sky-200/70 pt-0.5">
                 <MapPin className="w-4 h-4 text-sky-400 shrink-0" />
                 <span>{COMPANY_INFO.location}</span>
               </div>
@@ -204,9 +204,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-sky-900/60 py-6 text-center text-xs text-sky-200/60">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p>© {currentYear} Travel with Rushmail . All rights reserved.</p>
+      <div className="border-t border-sky-900/60 py-5 sm:py-6 text-center text-xs text-sky-200/60">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
+          <p>© {currentYear} Travel with Rushmile. All rights reserved.</p>
           <p className="text-sky-300/60">
             Crafted for Northern Pakistan Expeditions
           </p>
